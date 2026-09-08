@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Making Access Governance Legible — Na Sun</title>
+<meta name="description" content="Case study: foundational and quantitative UX research on enterprise authorization, role management, and external data sharing at Google Workspace.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%231B1912'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Georgia,serif' fill='%23FAF6EF' text-anchor='middle'%3ENS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="brand"><span class="mark">NS</span> Na Sun</a>
+    <nav class="main-nav" data-main-nav>
+      <a href="../index.html" data-nav="index.html">Home</a>
+      <a href="../index.html#work" data-nav="work">Work</a>
+      <a href="../about.html" data-nav="about.html">About</a>
+      <a href="../about.html#publications" data-nav="publications">Publications</a>
+      <a href="../assets/resume/Na-Sun-Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+    </nav>
+    <div style="display:flex;align-items:center;">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">◐</button>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="cs-hero">
+    <div class="wrap">
+      <a class="back" href="../index.html#work">← All case studies</a>
+      <span class="tag">Enterprise trust · Identity</span>
+      <h1>Making access governance legible before it becomes a security incident</h1>
+      <p class="lede">Foundational and quantitative research on authorization, role management, and external data sharing — for a system where the real failure mode isn't a missing feature, it's a permission nobody remembers granting.</p>
+    </div>
+  </section>
+
+  <section class="cs-body">
+    <div class="wrap" style="display:contents;">
+      <aside class="cs-meta reveal">
+        <div class="block"><span class="k">Team</span><span class="v">Google Workspace — Access Governance</span></div>
+        <div class="block"><span class="k">My role</span><span class="v">Senior UX Researcher, research lead</span></div>
+        <div class="block"><span class="k">Timeline</span><span class="v">2023 – 2025</span></div>
+        <div class="block"><span class="k">Methods</span><span class="v">
+          <span>Foundational admin interviews</span>
+          <span>Quantitative prioritization survey</span>
+          <span>Usability testing (multi-round)</span>
+          <span>Cross-functional roadmap workshops</span>
+        </span></div>
+        <div class="block"><span class="k">Measured impact</span><span class="v">+37% task success, +8 sentiment pts</span></div>
+      </aside>
+
+      <div class="cs-main reveal">
+        <h2>Context</h2>
+        <p>As Google Workspace expanded who could access what — employees, external guests, and eventually AI agents — the underlying permission model was becoming a genuine liability. IT admins were routinely over-granting access, not out of carelessness, but because the tools to actually reason about "who has access to what, and why" didn't exist yet. Security research, in this world, is really comprehension research: every over-granted permission starts as a UX failure before it becomes a headline.</p>
+
+        <h2>My role</h2>
+        <p>I led foundational research on <strong>authorization (AuthZ) role management</strong> across enterprise and SMB segments, identifying where admins were most likely to over-grant privileges. In parallel, I built the UX foundation for how organizations share data safely with people outside the company — defining the data-sharing boundaries and guest-labeling model behind <strong>Guest Pass collaboration</strong> across Chat, Drive, and the Admin Console.</p>
+
+        <h2>Approach</h2>
+        <p>I interviewed and observed IT admins performing real access-management tasks — not hypothetical ones — to map the critical user journeys of assigning, creating, changing, and auditing roles, and to see exactly where each journey broke down. Role assignment turned out to be the step admins treated most cautiously; role creation was the step that actually consumed the most time and triggered the most rework.</p>
+        <p>To cut through a long backlog of proposed access-control features, I fielded a <strong>quantitative prioritization survey</strong> across IT decision-makers, ranking which capabilities — like just-in-time (JIT) privileged access — actually mattered enough to build first, rather than relying on internal debate.</p>
+        <p>On the external-sharing side, I ran usability studies on the resulting guest-access infrastructure across multiple rounds, iterating with engineering and security between each one. A related usability effort on the high-scale infrastructure behind shared, user-generated content moved task success from a rough baseline to a <strong>37-percentage-point improvement</strong>, with an <strong>8-point lift in user sentiment</strong> — the evidence that ultimately cleared the bar for executive approval to launch.</p>
+
+        <div class="insight-block">
+          <span class="k">Key insight</span>
+          <p>The real paradox of enterprise access control: having too many admins with broad privileges was risky, but having too few created bottlenecks — so organizations resolved the tension by quietly over-provisioning. The fix wasn't more permission options. It was making the <em>current state of access</em> visible and auditable before anyone was asked to make another decision about it.</p>
+        </div>
+
+        <h2>Impact</h2>
+        <div class="impact-grid">
+          <div class="impact-item"><span class="num">+37%</span><span class="txt">Task success rate on the high-scale shared-content infrastructure that this research shaped, clearing the bar for General Availability.</span></div>
+          <div class="impact-item"><span class="num">+8 pts</span><span class="txt">Lift in user sentiment over the same research cycle, tracked alongside task success.</span></div>
+          <div class="impact-item"><span class="num">Alpha → GA</span><span class="txt">External data-sharing boundaries and guest-labeling model unblocked successful Alpha and General Availability launches.</span></div>
+        </div>
+
+        <h2>Reflection</h2>
+        <p>Security research is UX research wearing a different badge: nearly every over-granted permission is a comprehension failure downstream. If people can't see and reason about their own access, they will always default to granting more of it "just in case." Making that state visible turned out to matter more than adding another control.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="cs-nav">
+      <a href="genai-trust.html">← Generative AI product research</a>
+      <a class="next" href="platform-ecosystem.html">Next: Platform ecosystem →</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="copy">© <span id="year"></span> Na Sun. Written from public résumé disclosures and published research — no confidential product or internal metrics appear on this site.</span>
+    <div class="links">
+      <a href="mailto:nasun308@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/nasunpsu" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

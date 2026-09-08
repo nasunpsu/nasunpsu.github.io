@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grounding a Generative AI Product in Evidence — Na Sun</title>
+<meta name="description" content="Case study: leading UX research end-to-end for a 0-to-1 multimodal generative AI product, from exploration through GA.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%231B1912'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Georgia,serif' fill='%23FAF6EF' text-anchor='middle'%3ENS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="brand"><span class="mark">NS</span> Na Sun</a>
+    <nav class="main-nav" data-main-nav>
+      <a href="../index.html" data-nav="index.html">Home</a>
+      <a href="../index.html#work" data-nav="work">Work</a>
+      <a href="../about.html" data-nav="about.html">About</a>
+      <a href="../about.html#publications" data-nav="publications">Publications</a>
+      <a href="../assets/resume/Na-Sun-Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+    </nav>
+    <div style="display:flex;align-items:center;">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">◐</button>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="cs-hero">
+    <div class="wrap">
+      <a class="back" href="../index.html#work">← All case studies</a>
+      <span class="tag">0-to-1 · Generative AI</span>
+      <h1>Grounding a generative AI product in evidence, from zero to GA</h1>
+      <p class="lede">Leading end-to-end UX research for a new multimodal AI creation tool — from open-ended exploration to the Evals rubric and in-product measurement that governed the General Availability launch decision.</p>
+    </div>
+  </section>
+
+  <section class="cs-body">
+    <div class="wrap" style="display:contents;">
+      <aside class="cs-meta reveal">
+        <div class="block"><span class="k">Team</span><span class="v">Google Workspace — GenAI Productivity</span></div>
+        <div class="block"><span class="k">My role</span><span class="v">Senior UX Researcher, research lead</span></div>
+        <div class="block"><span class="k">Timeline</span><span class="v">2024 – 2026</span></div>
+        <div class="block"><span class="k">Methods</span><span class="v">
+          <span>Exploratory qualitative research</span>
+          <span>Evals rubric design</span>
+          <span>In-product HaTS instrumentation</span>
+          <span>Executive research synthesis</span>
+        </span></div>
+        <div class="block"><span class="k">Related publication</span><span class="v">"Gemini at Work," ACM DIS 2025</span></div>
+      </aside>
+
+      <div class="cs-main reveal">
+        <h2>Context</h2>
+        <p>Google was building a new multimodal AI creation tool — a generative product spanning both consumer and business tiers, later announced at Google I/O 2026. Leadership wanted research embedded from the earliest exploratory work all the way through the General Availability decision, not brought in after the product had already taken shape. The risk was familiar to anyone who's watched a generative AI feature ship on hype instead of evidence: a model that's technically impressive but doesn't survive contact with how people actually create and edit things.</p>
+
+        <h2>My role</h2>
+        <p>I led UX research for the product across its full lifecycle: open-ended exploratory work to define who the tool was really for and what "good" looked like for them, evaluative research that shaped the interaction model as it evolved, and — critically — the measurement infrastructure the team used to decide when the product was actually ready for General Availability.</p>
+
+        <h2>Approach</h2>
+        <p>I started before there was a clear product to test. Foundational research mapped how full-time creators and knowledge workers actually built and edited visual and written content today — where existing tools helped, and where AI-generated output created more cleanup work than it saved. That surfaced the workflow friction points a good generative tool would need to solve, rather than the ones that were easiest to build a demo around.</p>
+        <p>Because "does this feel useful" is notoriously unreliable as a self-reported metric for AI output, I designed a structured <strong>Evals rubric</strong> — a repeatable way for the team to score model output against real user needs instead of internal taste — and paired it with <strong>in-product HaTS (Happiness Tracking Survey) instrumentation</strong>, so we could watch sentiment move in near-real time as the model and interface changed release over release.</p>
+        <p>In parallel, I ran a companion research thread on how knowledge workers actually perceive productivity gains from generative AI more broadly. That work became a value framework that went beyond simple "time saved" math — and turned into a peer-reviewed paper, <a href="https://scholar.google.com/citations?user=ysBq_UcAAAAJ&hl=en" target="_blank" rel="noopener"><em>Gemini at Work</em> (ACM DIS 2025)</a>, which reframed how the team argued internally for enterprise GenAI investment.</p>
+
+        <div class="insight-block">
+          <span class="k">Key insight</span>
+          <p>People didn't lose trust in the generative tool because of raw output quality — they lost trust when the system's behavior was <em>unpredictable</em>: an edit that touched more than they'd asked for, or a result they couldn't trace back to anything they'd said. The biggest lever wasn't a better model. It was making AI behavior legible and controllable.</p>
+        </div>
+
+        <h2>Impact</h2>
+        <div class="impact-grid">
+          <div class="impact-item"><span class="num">GA readiness</span><span class="txt">Evals rubric + HaTS instrumentation became the team's shared source of truth for the General Availability go/no-go decision.</span></div>
+          <div class="impact-item"><span class="num">Consumer + Business</span><span class="txt">Research spanned both product tiers, surfacing where their needs diverged early enough to shape the roadmap, not just the launch copy.</span></div>
+          <div class="impact-item"><span class="num">1 peer-reviewed paper</span><span class="txt">The productivity-value framework became ACM DIS 2025 research, reshaping how the org pitched GenAI investment beyond time-savings.</span></div>
+        </div>
+
+        <h2>Reflection</h2>
+        <p>The clearest lesson from this project: in a 0-to-1 AI product, a research team's job isn't only to find problems — it's to build the measurement infrastructure so the rest of the org can see the same evidence you do, long after you've moved on to the next open question. A good Evals rubric outlives any single research readout.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="cs-nav">
+      <a href="../index.html#work">← All case studies</a>
+      <a class="next" href="access-governance.html">Next: Access governance →</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="copy">© <span id="year"></span> Na Sun. Written from public résumé disclosures and published research — no confidential product or internal metrics appear on this site.</span>
+    <div class="links">
+      <a href="mailto:nasun308@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/nasunpsu" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
