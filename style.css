@@ -285,6 +285,52 @@ h3 { font-size: 1.05rem; margin-bottom: 4px; }
   color: var(--text-muted);
 }
 
+/* ---------- Pillar cards (home) ---------- */
+.pillar-card .project-thumb {
+  height: auto;
+  min-height: 96px;
+  padding: 20px 18px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 1.02rem;
+  line-height: 1.4;
+  text-align: left;
+  font-weight: 600;
+  align-items: flex-start;
+}
+
+.type-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* ---------- Related work list (case studies) ---------- */
+.related-work {
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+  padding-top: 24px;
+}
+.related-work h2 { margin-top: 0; font-size: 1.05rem; }
+.related-work ul { list-style: none; padding: 0; margin: 12px 0 0; }
+.related-work li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border);
+}
+.related-work li:last-child { border-bottom: none; }
+.related-work li strong { color: var(--text); font-weight: 600; }
+
+.note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
 .placeholder-note {
   font-size: 0.82rem;
   color: #a67c00;

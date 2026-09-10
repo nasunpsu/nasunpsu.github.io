@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Core Data Product Usability — Na Sun</title>
+<title>Frontier AI &amp; Creative Tools — Na Sun</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,16 +20,16 @@
         <li><a href="about.html">About</a></li>
       </ul>
 
-      <div class="section-label">Case Studies</div>
+      <div class="section-label">Work</div>
       <ul>
-        <li><a href="case-study-1.html" class="active">Core Data Product Usability</a></li>
-        <li><a href="case-study-2.html">Scaling the API Happiness Program</a></li>
-        <li><a href="case-study-3.html">Gemini for Workspace: GenAI Adoption</a></li>
-        <li><a href="case-study-4.html">Scaling a Platform Ecosystem</a></li>
+        <li><a href="case-study-1.html" class="active">Frontier AI &amp; Creative Tools</a></li>
+        <li><a href="case-study-2.html">Enterprise Identity &amp; Access</a></li>
+        <li><a href="case-study-3.html">Developer &amp; Platform Experience</a></li>
       </ul>
 
       <div class="section-label">More</div>
       <ul>
+        <li><a href="publications.html">Publications</a></li>
         <li><a href="resume.html">Résumé</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -47,47 +47,100 @@
   <main class="main">
     <div class="content">
 
-      <h1>Core Data Product Usability &amp; Foundational Research</h1>
-      <p class="subtitle">Getting a core data product ready for General Availability by finding — and fixing — where users got stuck.</p>
+      <h1>When AI can generate anything, why do people still want to point and click?</h1>
+      <p class="subtitle">A 0→1 research arc on Google Pics — from how professionals actually make visual content, to the interaction model that shipped.</p>
 
       <div class="case-meta">
-        <div><strong>Role</strong><span>Senior UX Researcher</span></div>
-        <div><strong>Methods</strong><span>Usability testing, foundational research, sentiment tracking</span></div>
-        <div><strong>Domain</strong><span>Core Data, Google Workspace</span></div>
-        <div><strong>Period</strong><span>Oct 2019 – Mar 2022</span></div>
+        <div><strong>Role</strong><span>Lead UX Researcher</span></div>
+        <div><strong>Methods</strong><span>Foundational interviews, concept evaluation, usability, log analysis, competitive research, survey</span></div>
+        <div><strong>Domain</strong><span>Generative AI, multimodal image creation</span></div>
+        <div><strong>Period</strong><span>2024 – 2026</span></div>
+        <div><strong>Outcome</strong><span>Shipped to general availability, Sept 2026</span></div>
       </div>
 
-      <h2>The Problem</h2>
-      <p>Ahead of General Availability, a core data product needed to prove it could reliably
-      get real users to task completion — not just pass internal review. Usability gaps at
-      this stage are expensive: they either delay launch or ship as support burden and churn
-      risk once the product is public.</p>
+      <h2>Before there was a product</h2>
+      <p>The work started with no interface to evaluate — just a bet that generative AI
+      belonged somewhere in how people make visual content at work. So the first question
+      wasn't about AI at all. It was how full-time professionals actually produce and edit
+      visual work today, and where that process hurts.</p>
 
-      <h2>My Approach</h2>
-      <p>I ran foundational and evaluative usability research in parallel — combining
-      task-based usability testing with a user sentiment measure, so the team could see not
-      just whether people completed tasks, but how the experience felt while they did it.
-      This paired view made it possible to distinguish "technically works but frustrating"
-      from "genuinely broken," which changed how engineering prioritized fixes.</p>
+      <p>Three patterns came out of that foundational round. Feedback on visual work arrives
+      late, conflicting, and scattered across channels, so the expensive part of design isn't
+      the making, it's the reconciling. People without design backgrounds struggle to
+      articulate what they want until they can point at an example, which is why mood boards
+      exist and why they cost so much time. And the tools people already used were easy to
+      start with but hard to finish with — approachable enough to produce something, not
+      controllable enough to produce something polished.</p>
 
-      <h2>What I Found</h2>
-      <p>Testing surfaced specific friction points in the task flow that were quietly
-      suppressing both completion rates and user confidence — the kind of issues that don't
-      show up in log data until you watch someone hit them in real time.</p>
+      <p>That last one reframed the opportunity. The gap wasn't generation. Plenty of tools
+      could already generate. The gap was <em>control</em>.</p>
+
+      <h2>The question that mattered</h2>
+      <p>Once there was a prototype, the sharpest open question was the interaction model:
+      should people describe the edit they want in words, or manipulate the image directly?
+      Natural language is the obvious answer for a generative product, and it was the wrong
+      one.</p>
+
+      <p>In an interview and evaluation study of on-canvas editing controls, people reached
+      for direct manipulation over prompting consistently and without prompting from us.
+      Given a choice between describing a change and selecting the thing they wanted to
+      change, they selected. Prompting was what they fell back on when selection failed.</p>
 
       <div class="impact-banner">
-        <strong>Impact:</strong> Research-driven fixes lifted Task Success Rate by <strong>+37%</strong>
-        and user sentiment by <strong>+8 points</strong>, clearing the path for the product to
-        successfully reach General Availability.
+        <strong>The finding that moved the roadmap:</strong> for image editing, users
+        treat generative AI as a precision instrument, not a conversation partner. The
+        product risk was never model quality — it was whether the interaction model let
+        people aim.
       </div>
 
-      <h2>What Happened Next</h2>
-      <p>The product shipped to General Availability on the strength of this research —
-      a direct example of usability work functioning as a launch gate, not just a
-      nice-to-have polish pass.</p>
+      <h2>Where trust actually broke</h2>
+      <p>The same study surfaced three failure modes, and they were all about control rather
+      than output quality.</p>
+
+      <p>A two-step apply pattern designed for batching broke down for single edits, where
+      people expect immediate execution and real-time feedback — every participant tripped on
+      it. System states during object detection were ambiguous enough that people couldn't
+      tell whether the tool was working or stuck. And most damaging, localized edits sometimes
+      changed regions the user hadn't selected. That last one destroyed confidence faster than
+      any rendering flaw, because a tool that edits things you didn't ask it to edit is a tool
+      you have to check constantly.</p>
+
+      <h2>Closing the loop before launch</h2>
+      <p>Ahead of general availability, readiness research asked a blunter question: would
+      this replace what people already use? Not yet, was the honest answer. The product was
+      additive — people kept their existing tools alongside it, largely because ordinary
+      utilities were missing and because output quality degraded across successive edits. A
+      generative editor that gets worse the more you edit is one that punishes iteration,
+      which is exactly what its best users do most.</p>
+
+      <h2>What shipped</h2>
+      <p>Google Pics reached general availability in September 2026. The
+      <a href="https://workspaceupdates.googleblog.com/2026/09/google-pics-brings-pro-level-ai-image-creation-and-editing-to-Google-Workspace.html" target="_blank" rel="noopener">public announcement</a>
+      describes hover-and-select object-based local editing, individual text element editing,
+      cropping, upscaling, and version history for reverting changes — direct manipulation as
+      the primary interaction, the table-stakes utilities that had been sending people back to
+      other tools, and a way to recover from an edit that went wrong.</p>
+
+      <h2>Reflection</h2>
+      <p>The instinct with a generative product is to research the output: is it good, is it
+      accurate, does it look right. Almost everything that mattered here was upstream of
+      output. People will forgive a mediocre result they can correct, and abandon an excellent
+      one they can't aim. Most of my value on this team came from insisting that control was
+      the research question while the debate was still about quality.</p>
+
+      <div class="related-work">
+        <h2>Other work in this area</h2>
+        <ul>
+          <li><strong>Visual content creation among small businesses and nonprofits</strong> — field and survey research on AI adoption for marketing and brand-consistent visual work.</li>
+          <li><strong>AI onboarding for low-AI-literacy creators</strong> — foundational research on what stops non-designers from getting a usable result.</li>
+          <li><strong>Competitive research in consumer video and image editing</strong> — teardown and desk research on how a market leader packages AI features and prices them.</li>
+          <li><strong>Usage analysis of third-party visual tools inside Workspace</strong> — log research on where people leave the suite to finish creative tasks.</li>
+          <li><strong>Position paper on AI and memory</strong> — a synthesis on personalization, shared memory, and user control over what an assistant remembers.</li>
+        </ul>
+      </div>
 
       <footer class="page-footer">
-        © 2026 Na Sun.
+        © 2026 Na Sun. Product details cited from public announcements.
       </footer>
     </div>
   </main>

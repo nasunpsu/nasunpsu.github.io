@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Scaling the API Happiness Program — Na Sun</title>
+<title>Enterprise Identity &amp; Access — Na Sun</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,16 +20,16 @@
         <li><a href="about.html">About</a></li>
       </ul>
 
-      <div class="section-label">Case Studies</div>
+      <div class="section-label">Work</div>
       <ul>
-        <li><a href="case-study-1.html">Core Data Product Usability</a></li>
-        <li><a href="case-study-2.html" class="active">Scaling the API Happiness Program</a></li>
-        <li><a href="case-study-3.html">Gemini for Workspace: GenAI Adoption</a></li>
-        <li><a href="case-study-4.html">Scaling a Platform Ecosystem</a></li>
+        <li><a href="case-study-1.html">Frontier AI &amp; Creative Tools</a></li>
+        <li><a href="case-study-2.html" class="active">Enterprise Identity &amp; Access</a></li>
+        <li><a href="case-study-3.html">Developer &amp; Platform Experience</a></li>
       </ul>
 
       <div class="section-label">More</div>
       <ul>
+        <li><a href="publications.html">Publications</a></li>
         <li><a href="resume.html">Résumé</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -47,48 +47,102 @@
   <main class="main">
     <div class="content">
 
-      <h1>Scaling the API Happiness Program (HaTS)</h1>
-      <p class="subtitle">Building the first standardized way to measure developer happiness across Workspace Platform's APIs — and turning it into a cross-org operating rhythm.</p>
+      <h1>Why do organizations hand out more access than they mean to?</h1>
+      <p class="subtitle">Foundational and quantitative research on admin role management and external collaboration — for a system where the real failure mode isn't a missing feature, it's a permission nobody remembers granting.</p>
 
       <div class="case-meta">
-        <div><strong>Role</strong><span>Program Lead, Senior UX Researcher</span></div>
-        <div><strong>Methods</strong><span>Happiness Tracking Survey (HaTS) design, quantitative analysis, program design</span></div>
-        <div><strong>Scale</strong><span>Scaled from 5 to 33 APIs</span></div>
-        <div><strong>Domain</strong><span>Workspace Platform</span></div>
-        <div><strong>Partners</strong><span>Tech Writer &amp; DevRel orgs</span></div>
+        <div><strong>Role</strong><span>Senior UX Researcher, research lead</span></div>
+        <div><strong>Methods</strong><span>Foundational admin interviews, MaxDiff &amp; TURF prioritization survey, multi-round usability, competitive research</span></div>
+        <div><strong>Domain</strong><span>Identity and access management, enterprise administration</span></div>
+        <div><strong>Period</strong><span>2024 – 2026</span></div>
+        <div><strong>Outcome</strong><span>Guest accounts shipped to GA, March 2026</span></div>
       </div>
 
-      <h2>The Problem</h2>
-      <p>Workspace Platform had dozens of APIs and no standardized, comparable way to know
-      how developers actually felt using them. Without a shared measure, the Tech Writer and
-      DevRel organizations had no common language for prioritizing where to invest —
-      decisions were being made on anecdote rather than evidence.</p>
+      <h2>The paradox</h2>
+      <p>Every IT admin I spoke with knew the principle of least privilege. Every one of them
+      could explain why granting broad access was dangerous. And their organizations were
+      over-provisioned anyway.</p>
 
-      <h2>My Approach</h2>
-      <p>I pioneered an API-specific adaptation of Google's Happiness Tracking Survey (HaTS)
-      methodology — a validated quantitative instrument — and piloted it on a small set of
-      APIs before scaling. The program design deliberately built in comparability across
-      APIs and over time, so scores could be tracked as a trend, not just a one-off snapshot.</p>
-
-      <h2>What I Found</h2>
-      <p>Once live across a wider set of APIs, the data revealed clear, ranked variation in
-      developer happiness — and specific, recurring pain points that individual APIs shared,
-      which pointed to systemic fixes rather than one-off patches.</p>
+      <p>The reason turned out to be structural rather than careless. Having many
+      highly-privileged admins is a security risk. Having too few creates an operational
+      bottleneck — work stops while people wait for someone with the right permissions.
+      Organizations resolve that tension in the only direction that doesn't block anyone: they
+      quietly grant more access than they intend to, and then lose track of it.</p>
 
       <div class="impact-banner">
-        <strong>Impact:</strong> The program scaled from <strong>5 to 33 APIs</strong> and
-        became the basis for new shared OKRs between the Tech Writer and DevRel
-        organizations — turning a research method into a standing cross-org measurement system.
+        <strong>The reframe:</strong> this isn't a permissions problem, it's a comprehension
+        problem. Nobody can practice least privilege in a system where the current state of
+        access is invisible. Every over-granted permission starts as a UX failure long before
+        it becomes a security incident.
       </div>
 
-      <h2>What Happened Next</h2>
-      <p>HaTS scores became a recurring input into prioritization conversations across two
-      previously disconnected orgs, giving both a shared, quantitative way to argue for
-      investment — the kind of infrastructure that keeps generating value long after the
-      original study ends.</p>
+      <h2>Where the journey actually breaks</h2>
+      <p>I mapped four journeys admins move through — assigning a role, creating one, changing
+      one, and auditing what exists — and watched people perform them on real tasks rather
+      than hypothetical ones. The two hardest steps were hard for opposite reasons.</p>
+
+      <p>Creating a role consumed the most time. Privilege descriptions were written in
+      language that didn't map to anything an admin recognized, so building a role meant
+      rounds of trial, testing, and validation to find out what it actually permitted.
+      Assigning a role was faster but by far the most error-prone, and admins knew it — it was
+      the step they approached most cautiously, because a wrong assignment is silent and
+      durable.</p>
+
+      <p>The segment split mattered too. Smaller organizations leaned on prebuilt system roles
+      as far as they could stretch them, which is its own kind of over-granting. Larger
+      enterprises built custom roles and ran into the scoping limits instead.</p>
+
+      <h2>Deciding what to build first</h2>
+      <p>The feature backlog was longer than the roadmap, and the debate about what mattered
+      most was being settled by whoever argued hardest. I fielded a MaxDiff and TURF
+      prioritization survey with IT decision-makers to replace that with a ranking.</p>
+
+      <p>Just-in-time privileged access — temporary, time-bound elevation through an approval
+      workflow — came out as the single most valued capability, ahead of every other
+      candidate. Which is the paradox resolving itself: given a way to grant high privilege
+      that automatically expires, organizations don't need to choose between risk and
+      bottleneck. The survey didn't just rank features, it confirmed the diagnosis.</p>
+
+      <h2>The other half: sharing outside the company</h2>
+      <p>External collaboration ran on an assumption worth testing — that people had a
+      reasonable sense of what they'd shared outside the organization. They didn't. Limited
+      visibility into who has access to what, and at what level, produced a persistent low
+      confidence that showed up as hesitation rather than complaint.</p>
+
+      <p>The design instinct had been to give precise control at the level of each individual
+      document. Research pointed the other way: per-document control creates an auditing
+      bottleneck, and what people actually needed was one consolidated view of every external
+      permission in one place. On labeling, a small durable finding — pairing icons with
+      colors rather than relying on color alone, because color carries different meanings for
+      different people and none of them are guaranteed.</p>
+
+      <h2>What shipped</h2>
+      <p>Guest accounts reached general availability in Google Workspace in March 2026. The
+      <a href="https://workspaceupdates.googleblog.com/2026/03/introducing-guest-accounts.html" target="_blank" rel="noopener">public announcement</a>
+      describes provisioning external collaborators into the organization's own domain so they
+      can work across Chat, Drive, Docs, Slides, Sheets, and Meet while remaining subject to
+      the organization's security policies — external collaboration that stays inside the
+      governance model rather than routing around it.</p>
+
+      <h2>Reflection</h2>
+      <p>Security research is UX research wearing a different badge. The temptation in this
+      space is to add controls, because controls are legible as security work. Almost
+      everything I found pointed the other way: people already had more controls than they
+      could reason about. Making the current state of access visible mattered more than making
+      it more configurable.</p>
+
+      <div class="related-work">
+        <h2>Other work in this area</h2>
+        <ul>
+          <li><strong>Group administration and lifecycle management</strong> — foundational research on visibility, proliferation, and the governance gaps that make admins suppress adoption of a collaboration primitive.</li>
+          <li><strong>Guest access labeling and host comprehension</strong> — how the people sharing externally interpret guest indicators, and what they assume about what they've exposed.</li>
+          <li><strong>Admin needs for external account management</strong> — onboarding, auditing, and offboarding across small business, mid-market, and enterprise segments.</li>
+          <li><strong>Competitive research on enterprise identity providers</strong> — why organizations select and stay with an incumbent identity platform.</li>
+        </ul>
+      </div>
 
       <footer class="page-footer">
-        © 2026 Na Sun.
+        © 2026 Na Sun. Product details cited from public announcements.
       </footer>
     </div>
   </main>

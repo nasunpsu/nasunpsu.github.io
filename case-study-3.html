@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Gemini for Workspace: GenAI Adoption — Na Sun</title>
+<title>Developer &amp; Platform Experience — Na Sun</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,16 +20,16 @@
         <li><a href="about.html">About</a></li>
       </ul>
 
-      <div class="section-label">Case Studies</div>
+      <div class="section-label">Work</div>
       <ul>
-        <li><a href="case-study-1.html">Core Data Product Usability</a></li>
-        <li><a href="case-study-2.html">Scaling the API Happiness Program</a></li>
-        <li><a href="case-study-3.html" class="active">Gemini for Workspace: GenAI Adoption</a></li>
-        <li><a href="case-study-4.html">Scaling a Platform Ecosystem</a></li>
+        <li><a href="case-study-1.html">Frontier AI &amp; Creative Tools</a></li>
+        <li><a href="case-study-2.html">Enterprise Identity &amp; Access</a></li>
+        <li><a href="case-study-3.html" class="active">Developer &amp; Platform Experience</a></li>
       </ul>
 
       <div class="section-label">More</div>
       <ul>
+        <li><a href="publications.html">Publications</a></li>
         <li><a href="resume.html">Résumé</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -47,47 +47,95 @@
   <main class="main">
     <div class="content">
 
-      <h1>Gemini for Workspace: Understanding Enterprise GenAI Adoption</h1>
-      <p class="subtitle">How do knowledge workers actually use generative AI day to day — and what does that mean for product strategy? Published at DIS 2025.</p>
+      <h1>What makes a developer bet their roadmap on someone else's platform?</h1>
+      <p class="subtitle">Mixed-methods research across a three-sided ecosystem — end users, IT admins, and third-party developers — plus the measurement program that tracked whether any of it was working.</p>
 
       <div class="case-meta">
-        <div><strong>Role</strong><span>Lead Researcher</span></div>
-        <div><strong>Methods</strong><span>Structured focus groups, cross-job-family sampling, qualitative synthesis</span></div>
-        <div><strong>Sample</strong><span>N = 37 knowledge workers across 7 job families</span></div>
-        <div><strong>Scope</strong><span>Gmail, Docs, Drive, Slides, Meet</span></div>
-        <div><strong>Published</strong><span>ACM DIS 2025</span></div>
+        <div><strong>Role</strong><span>Senior UX Researcher, program lead</span></div>
+        <div><strong>Methods</strong><span>Developer survey (n=146), interviews (n=19), observational usability, longitudinal satisfaction benchmarking, MaxDiff, significance testing</span></div>
+        <div><strong>Domain</strong><span>Developer platforms, APIs, app marketplaces, data infrastructure</span></div>
+        <div><strong>Period</strong><span>2019 – 2024</span></div>
+        <div><strong>Scale</strong><span>20+ PMs · 560% growth in API measurement coverage</span></div>
       </div>
 
-      <h2>The Problem</h2>
-      <p>Generative AI was moving into everyday knowledge work fast, but the product
-      organization lacked a grounded understanding of how it actually changed people's
-      workflows — versus how leadership assumed it would. Enterprise GenAI strategy needed
-      to be built on evidence, not extrapolation from consumer AI usage patterns.</p>
+      <h2>Three audiences, three sets of incentives</h2>
+      <p>A platform is not one product with one user. End users install apps and want them to
+      work. IT admins decide what's allowed to run inside the organization and carry the risk
+      when it goes wrong. Third-party developers decide whether the platform is worth building
+      on at all, and they have somewhere else to go. Product bets that delight one of these
+      groups routinely break trust with another, so the research had to hold all three at once
+      instead of optimizing for whoever was loudest in the roadmap meeting.</p>
 
-      <h2>My Approach</h2>
-      <p>I designed structured focus groups spanning seven distinct job families and
-      recruited 37 knowledge workers to evaluate Gemini for Workspace across Gmail, Docs,
-      Drive, Slides, and Meet. The cross-job-family design was deliberate — a workflow
-      accelerant for one role can be a distraction for another, and the strategy needed to
-      account for that variation rather than average it away.</p>
+      <h2>Why developers build where they build</h2>
+      <p>I ran this in two passes: a survey of 146 developers across competing chat platforms
+      to establish the shape of the decision, then 19 in-depth interviews to understand the
+      reasoning underneath it.</p>
 
-      <h2>What I Found</h2>
-      <p>The research uncovered specific patterns of workflow acceleration and,
-      notably, shifts in how tasks got allocated between people and AI — not a uniform
-      productivity bump, but a reorganization of who does what.</p>
+      <p>The finding that changed strategy was that "developer" is not one audience either.
+      Developers building public, commercially distributed apps chose platforms on market
+      value and reach — how many customers they could get to, and whether a partnership
+      unlocked revenue. Developers building private, internal apps barely cared about reach;
+      they chose on documentation quality and platform reliability, because their cost is
+      engineering time and their risk is silent breakage.</p>
 
       <div class="impact-banner">
-        <strong>Impact:</strong> Findings directly informed GenAI product strategy for
-        Workspace, and the work was accepted for publication at the 2025 ACM Designing
-        Interactive Systems Conference (DIS '25) — a competitive venue with a 25% acceptance rate.
-        Read the paper on
-        <a href="https://scholar.google.com/citations?user=ysBq_UcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.
+        <strong>The implication:</strong> one developer strategy cannot serve both. Growing
+        the public app catalog is a distribution and business-development problem. Growing
+        internal adoption is a documentation and reliability problem. Teams had been treating
+        them as one funnel and under-serving both.
       </div>
 
-      <h2>What Happened Next</h2>
-      <p>The task-allocation findings in particular reframed internal conversations about
-      what "AI productivity" should even be measured against — shifting focus from raw time
-      saved toward where human judgment still needed to stay in the loop.</p>
+      <p>Dissatisfaction clustered in three places, and none of them were the API surface
+      itself: gaps against competing platforms' feature parity, documentation that was hard to
+      act on — especially around authentication and configuration — and constrained UI
+      components that limited what an app could look like once built.</p>
+
+      <h2>What end users and admins hit</h2>
+      <p>Observational research on the install journey found people leaving the product
+      entirely and using web search to find the app directory, because the entry points inside
+      the product weren't discoverable. Once someone found any entry point, they reused it
+      forever, which made the journey feel easy in retrospect and hid the problem from
+      everyone measuring downstream.</p>
+
+      <p>People also searched rather than browsed, and searched by the problem they were
+      trying to solve rather than by app name — which the catalog wasn't built to answer. For
+      admins, search quality was the top pain as well, followed by concerns about app quality
+      and cost exposure. Three different audiences, converging on the same broken step.</p>
+
+      <h2>Building the measurement layer</h2>
+      <p>Insight without measurement doesn't survive a reorg. Alongside the foundational work
+      I built and scaled the platform's developer satisfaction benchmarking — a standardized
+      instrument applied consistently across APIs so scores were comparable across products
+      and over time, growing coverage from a handful of APIs to the platform's full surface
+      area, a <strong>560% increase</strong>, and establishing shared goals between the
+      technical writing and developer relations organizations that had previously had no
+      common measure to argue from.</p>
+
+      <p>The same discipline applied on the infrastructure side, where I ran multi-year
+      satisfaction tracking on internal developer tooling with longitudinal significance
+      testing, so the team could distinguish real movement from noise rather than reading
+      quarterly wobble as progress. On one high-scale storage service, two rounds of iterative
+      usability research moved task success on the critical journeys by
+      <strong>37 percentage points</strong> and lifted user sentiment
+      <strong>8 points</strong>, which is what cleared the bar for general availability.</p>
+
+      <h2>Reflection</h2>
+      <p>Platform research is rarely about a screen. It's about whether a set of incentives
+      line up well enough that three groups of people, who never meet, keep choosing to
+      participate. The frameworks I built mattered less as research artifacts than as shared
+      language — a way for PMs, engineers, and external partners to argue about the same thing
+      instead of past each other.</p>
+
+      <div class="related-work">
+        <h2>Other work in this area</h2>
+        <ul>
+          <li><strong>Workflow automation research</strong> — how people build and share automations, and why the builder is so often not the person who benefits.</li>
+          <li><strong>App marketplace research across all three audiences</strong> — discovery, installation, quality signals, and promotion, studied from the end user, admin, and developer sides.</li>
+          <li><strong>Enterprise integration prioritization survey</strong> — which third-party integrations carried the most demand, used to shape annual planning.</li>
+          <li><strong>Data infrastructure and developer tooling research</strong> — critical user journeys for indexing pipelines, query tooling, and data discovery, including feature prioritization by MaxDiff.</li>
+          <li><strong>User segmentation for a query language</strong> — six distinct segments with different goals, dependencies, and support needs.</li>
+        </ul>
+      </div>
 
       <footer class="page-footer">
         © 2026 Na Sun.
