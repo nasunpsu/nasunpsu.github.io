@@ -61,26 +61,45 @@ stay off the site regardless of what's since shipped.
   know the actual date and I'll split it out — I didn't want to guess.
 - Your work email. Every page now uses `nasun308@gmail.com` instead of your Google address.
 
-**Kept, and worth knowing why:** "Guest Pass" is used on the About and résumé pages — it
-appears directly in your résumé bullets, so it's already something you've chosen to
-disclose externally. The 37-knowledge-workers/7-job-families figure in case-study-3 is also
-kept as-is for the same reason: it's stated in your résumé, not just in an internal catalog.
+**"Guest Pass" — removed.** This was on the site initially because it appears in your
+résumé. A later check found the feature shipped publicly in March 2026 as **guest
+accounts** (GA March 30); "Guest Pass" appears nowhere in Google's public material, which
+makes it almost certainly an internal project name. The pages now describe the work without
+naming it. If you can confirm Guest Pass is what shipped as guest accounts, the better move
+is to name the *public* feature — a reader can look it up and verify a real GA launch,
+which an internal codename can never do.
+
+**Impact metrics — kept, deliberately.** The +37% / +8 points, the 5→33 APIs and 560%
+coverage growth, and the 20+ PMs figure are all on the public pages by your decision. They
+name no product, and this kind of number is common on UXR portfolios. Flagging it here only
+so the reasoning is on the record rather than accidental.
 
 ## A sanitization rule of thumb going forward
 
-As you add more content yourself, here's the test I used, and that you can reuse:
+As you add more content yourself, here's the test — corrected from an earlier, sloppier
+version of it that lived in this file:
 
-1. **Is it in your résumé, or in a paper you've published?** If yes, it's already something
-   you've chosen to put in front of external readers — safe to reuse verbatim.
-2. **Is it *only* in an internal catalog, doc, or slide deck?** Treat it as confidential,
-   regardless of how "well known" it feels internally, or whether the product it's about has
-   since launched publicly.
-3. **A product going public is not the same as internal information about it going
+1. **Résumé-presence is a test of accuracy, not of publishability.** A résumé is a
+   *targeted* disclosure — you hand it to specific people in a context with some
+   professional discretion. A public URL is a *broadcast*, including to competitors. So "it's
+   in my résumé" means the fact is true and you're comfortable saying it; it does not by
+   itself mean it belongs on the open web. This is the distinction the Guest Pass item
+   above turned on.
+2. **Published, peer-reviewed work is unambiguously safe.** Anything in your CHI or DIS
+   papers is already public by definition — reuse it verbatim, and cite it, because it's
+   the strongest material you have.
+3. **Is it *only* in an internal catalog, doc, or slide deck?** Treat it as confidential,
+   regardless of how "well known" it feels internally, or whether the product it's about
+   has since launched publicly.
+4. **A product going public is not the same as internal information about it going
    public.** Once Google confirms a product exists (a launch, a blog post, a press
    release), the *product name* is fair game. Team codenames, internal metrics, OKRs,
    roadmap names, and unreleased-feature details tied to it are still off-limits unless
    Google has separately disclosed those specific facts.
-4. When in doubt, check with whatever internal process Google has for reviewing external
+5. **Check the public name before you use any name.** One search settles whether a thing
+   you've been calling by its internal name has a different public one. This is cheap and
+   catches the highest-risk category of mistake.
+6. When in doubt, check with whatever internal process Google has for reviewing external
    portfolio content before publishing — especially before adding new case studies.
 
 ## How to publish it
@@ -99,7 +118,17 @@ Live at `https://nasunpsu.github.io` within a minute or two of pushing.
 
 ## Still open
 
-- **Promotion date.** If you want the About/résumé timeline to show your promotion to
-  Senior UX Researcher as a separate milestone, tell me the actual date and I'll add it.
-- **New case studies or an "Art & Writing" section** — not built yet, only if/when you want them.
-- **A real photo** — the sidebar currently has no headshot; add one whenever you're ready.
+- **Confirm: did "Guest Pass" ship as "guest accounts"?** If yes, the About and résumé
+  pages can name the public feature and link the announcement — a real credibility upgrade.
+- **Confirm the DIS numbers.** The 37 participants / 7 job families figure is safe if it's
+  reported in the published paper. ACM's site blocks automated fetching, so this needs a
+  ten-second look at your own PDF.
+- **Depth in the case studies.** This is the biggest remaining gap. All four pages state
+  outcomes but show no research — no artifacts, no method detail, no frameworks, no
+  sanitized stimuli. Senior IC and lead hiring managers read for *how you think*. Anything
+  shareable you can add here is worth more than any other change on this list.
+- **Promotion date.** If you want the timeline to show your promotion to Senior UX
+  Researcher as a separate milestone, provide the actual date and it can be split out.
+- **The "currently work on Google Pics" tense** on the About page, given you're on leave.
+- **A real photo** — the sidebar currently has no headshot.
+- **New case studies or an "Art & Writing" section** — not built yet.
