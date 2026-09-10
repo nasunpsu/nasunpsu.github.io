@@ -1,21 +1,39 @@
-# Na Sun — UX Research Portfolio (v2)
+# Na Sun — UX Research Portfolio (v3)
 
 A static HTML/CSS site — sidebar navigation, deep sage green accent,
 credential-forward minimalism. No JavaScript, no build step.
 
-## What's in here
+## Information architecture
 
-- `index.html` — home page with intro + four case studies
-- `about.html` — bio, focus areas over time, education
-- `resume.html` — full résumé (education, work history, publications, skills), with a
-  "Download PDF" button linked to `resume.pdf`
-- `resume.pdf` — your résumé file
-- `case-study-1.html` — Core Data Product Usability (+37% Task Success Rate, GA launch)
-- `case-study-2.html` — Scaling the API Happiness Program (HaTS, 5→33 APIs)
-- `case-study-3.html` — Gemini for Workspace: GenAI Adoption (DIS '25 publication)
-- `case-study-4.html` — Scaling a Platform Ecosystem (20+ PMs, 560% HaTS coverage growth)
+Work is organized by **who the user is**, not by product domain — the three sides of a
+platform. That's what makes the "full-stack" claim legible: end users, admins, developers,
+one researcher across all three. Methodology deliberately does *not* structure the site;
+it appears as case-study metadata and as a methods block on About, because organizing a
+Staff-level portfolio by method reads as "I can run studies" rather than "I own domains."
+
+Each case study is headlined by the research question rather than the project name,
+following the pattern on harshkmittal.com.
+
+- `index.html` — hero, current work, three featured case studies, publications, contact
+- `case-study-1.html` — **Frontier AI & Creative Tools.** "When AI can generate anything,
+  why do people still want to point and click?" A 0→1 arc on Google Pics: foundational
+  research → the direct-manipulation vs. prompting question → pre-GA readiness → what
+  shipped. Told entirely from publicly announced product features.
+- `case-study-2.html` — **Enterprise Identity & Access.** "Why do organizations hand out
+  more access than they mean to?" The over-provisioning paradox, role-management journeys,
+  MaxDiff prioritization, and external sharing — anchored to the March 2026 guest accounts
+  launch.
+- `case-study-3.html` — **Developer & Platform Experience.** "What makes a developer bet
+  their roadmap on someone else's platform?" Merges the former platform-ecosystem and
+  data-infrastructure pillars; the multi-year measurement program is its own section.
+- `about.html` — bio, focus areas over time, education, methods
+- `publications.html` — the three peer-reviewed papers + Google Scholar
+- `resume.html` — full résumé, with a "Download PDF" button linked to `resume.pdf`
 - `contact.html` — email, LinkedIn, Google Scholar
 - `style.css` — shared stylesheet
+
+Each case study ends with a short "Other work in this area" list. That's where the breadth
+of the 61-study catalog shows up, genericized — no internal product names.
 
 ## What changed from the earlier draft, and why
 
