@@ -308,6 +308,57 @@ h3 { font-size: 1.05rem; margin-bottom: 4px; }
   display: block;
 }
 
+/* ---------- Figures ---------- */
+figure.fig {
+  margin: 28px 0;
+}
+figure.fig img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+}
+figure.fig figcaption {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+  line-height: 1.5;
+}
+figure.fig.narrow { max-width: 460px; }
+
+/* ---------- Talk entries (publications page) ---------- */
+.talk {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+  align-items: start;
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+.talk:last-of-type { border-bottom: none; }
+.talk img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: block;
+}
+.talk h3 { margin: 0 0 4px; }
+.talk .meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.talk p { margin: 0; font-size: 0.94rem; }
+
+@media (max-width: 640px) {
+  .talk { grid-template-columns: 1fr; }
+  .talk img { max-width: 260px; }
+}
+
 /* ---------- Related work list (case studies) ---------- */
 .related-work {
   border-top: 1px solid var(--border);

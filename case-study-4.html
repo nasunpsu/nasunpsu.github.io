@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>If I Build It, Will You Belong? — Na Sun</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="name">Na Sun</div>
+    <div class="role">Senior UX Researcher, PhD</div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="section-label">Work</div>
+      <ul>
+        <li><a href="case-study-1.html">Frontier AI &amp; Creative Tools</a></li>
+        <li><a href="case-study-2.html">Enterprise Identity &amp; Access</a></li>
+        <li><a href="case-study-3.html">Developer &amp; Platform Experience</a></li>
+        <li><a href="case-study-4.html" class="active">Designing &amp; Measuring Community</a></li>
+      </ul>
+
+      <div class="section-label">More</div>
+      <ul>
+        <li><a href="publications.html">Publications &amp; Talks</a></li>
+        <li><a href="resume.html">Résumé</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a class="resume-btn" href="resume.html">View Résumé →</a>
+
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/nasunpsu/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=ysBq_UcAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+      <a href="mailto:nasun308@gmail.com">Email</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="content">
+
+      <h1>"If I build it, will you belong?"</h1>
+      <p class="subtitle">Building two validated instruments, a Slack bot, and a web app — then running the experiment to find out whether any of it produced a feeling of community.</p>
+
+      <div class="case-meta">
+        <div><strong>Role</strong><span>Sole researcher and developer · doctoral research, Penn State</span></div>
+        <div><strong>Methods</strong><span>Scale development &amp; validation, exploratory factor analysis, quasi-experiment, Wilcoxon signed-rank, ANOVA, interviews, log analysis</span></div>
+        <div><strong>Domain</strong><span>Online learning, CSCW, community</span></div>
+        <div><strong>Period</strong><span>2016 – 2019</span></div>
+        <div><strong>Scale</strong><span>740-respondent instrument validation · 365-member deployment</span></div>
+      </div>
+
+      <figure class="fig">
+        <img src="assets/img/weare-wall.jpg" alt="A wall covered in handwritten colored cards from Penn State new student orientation, each beginning 'I'm all in' and completed with a personal statement.">
+        <figcaption>Penn State students chant "We Are." At new student orientation, they fill a wall with cards — "I'm all in… I am the third generation at Penn State." This is shared identity you can photograph. Online students earning the same degree never see this wall.</figcaption>
+      </figure>
+
+      <h2>The problem</h2>
+      <p>Penn State's World Campus is one of the largest online degree programs in the
+      country. Its students earn the same degree as residential students, wear the same
+      letters, and — in the survey I ran — 62.9% of them had never once set foot on campus.
+      They had the credential without the campus, and the question underneath my dissertation
+      was whether the second one could be built out of software.</p>
+
+      <p>That question has an awkward prerequisite. You cannot design for community and then
+      claim you improved it unless you can measure it, and the existing instruments for
+      measuring sense of community were written for people who share a physical place.</p>
+
+      <h2>First, build the ruler</h2>
+      <p>So I developed and validated two instruments: Sense of Community, covering felt
+      affinity and personal ties, and Community Collective Efficacy, covering beliefs about
+      what the community is collectively capable of.</p>
+
+      <p>I surveyed the entire active World Campus student population and obtained 740 usable
+      responses. Because I suspected the <em>framing</em> of the word "community" would itself
+      move the needle, I embedded a between-subjects manipulation: half the sample saw
+      community defined as a virtual campus community, half as a network of acquaintances,
+      assigned by randomized blocks after an a priori power analysis set the minimum cell
+      size. Both scales were highly reliable — Cronbach's α of .93 and .96.</p>
+
+      <p>Exploratory factor analysis with Varimax rotation, followed by principled removal of
+      cross-loading items, reduced the 10-item sense-of-community scale to seven items across
+      two factors, and the 24-item collective efficacy scale to thirteen items across three.
+      Convergent validity held: standardized loadings and average variance extracted were both
+      above .5 for every construct.</p>
+
+      <div class="impact-banner">
+        <strong>The instrument answered a design question before a single feature was built.</strong>
+        Common Identity scored far higher than Friendship (F(1,680) = 254.37, p &lt; .001).
+        Online learners experience community through shared purpose, membership and trust —
+        not through friendship. So the design brief was never "help these people make
+        friends." It was "make what they already share visible to each other."
+      </div>
+
+      <h2>Then build the thing</h2>
+      <p>I built two connected systems. <strong>WeAre!</strong> was a Slack workspace with a
+      custom bot that walked new members through an introduction, nudged them toward specific
+      social actions, helped schedule meetings, and surfaced who was currently present.
+      <strong>WeConnect</strong> was a web application that let students browse peers, see
+      shared attributes, and read a visualization of peer availability across time zones.</p>
+
+      <figure class="fig">
+        <img src="assets/img/weconnect-architecture.png" alt="System architecture diagram: Penn State credentials feed a Slack workspace called WeAre! and a web app called WeConnect, synchronized through MongoDB via the Slack API, with program data drawn from LDAP.">
+        <figcaption>System overview. University credentials gated entry; program data came from LDAP; MongoDB kept the Slack workspace and the web app in sync through the Slack API. I designed and built both ends.</figcaption>
+      </figure>
+
+      <p>The design followed directly from the measurement work. If common identity is the
+      lever and friendship isn't, then the system's job is to surface the grounds for
+      affinity people already have — same program, same time zone, same stage of a long
+      degree — rather than to engineer intimacy. 365 students joined.</p>
+
+      <h2>Then find out whether it worked</h2>
+      <p>The deployment was a quasi-experiment: pre- and post-usage measures with a
+      non-equivalent control group, since students chose for themselves whether to join.
+      121 participants completed both waves of the sense-of-community measures and 115
+      completed both collective efficacy waves, splitting into 49 users and 72 non-users.</p>
+
+      <p>Because all five community scales were strongly negatively skewed, I used Wilcoxon
+      signed-rank tests rather than paired t-tests. Two constructs moved reliably, and only
+      among the students who actually used the tools: <strong>Coordination</strong>
+      (Z = 233.500, p &lt; .01) and <strong>Social Support</strong> (Z = 199.500, p &lt; .01).
+      Nothing moved reliably in the control group, and nothing moved on the sense-of-community
+      constructs at all.</p>
+
+      <p>That last part matters and I reported it as prominently as the wins. Four months of
+      a well-used tool did not manufacture friendship or belonging. What it moved was the
+      belief that this group could coordinate and look after each other.</p>
+
+      <h2>The finding worth remembering</h2>
+      <p>I then ran five ANOVAs on the pre-to-post change scores, after confirming normality
+      and equal variance with Shapiro and Levene tests. The significant predictor was not how
+      often someone used the tool. It was the <em>interaction</em> between usage frequency and
+      how competent the student rated themselves with Slack in general — for Identity
+      Regulation (R² = 45.7%, F(8,40) = 4.810, p &lt; .001) and for Coordination
+      (F(3,40) = 3.569, p &lt; .05).</p>
+
+      <div class="impact-banner">
+        <strong>The benefit concentrated almost entirely among students who rated themselves
+        <em>low</em> in general Slack fluency.</strong> Frequent use helped — but mostly for
+        people who weren't already comfortable with the medium. The power users got a chat
+        app. The people who found chat apps intimidating got a community.
+      </div>
+
+      <h2>Reflection</h2>
+      <p>This is the project where I owned every layer: the construct, the instrument that
+      measured it, the system meant to move it, the study that tested whether it did, and the
+      null result sitting next to the positive one. It's also where the question I still work
+      on took shape — how people coordinate through software, and what a system has to make
+      visible before they can.</p>
+
+      <p>The durable lesson was about what is and isn't engineerable. You can build the
+      conditions for coordination and mutual support, and measure that you did. You cannot
+      build intimacy, and a researcher who claims otherwise hasn't looked closely at their own
+      control group.</p>
+
+      <div class="related-work">
+        <h2>Published from this work</h2>
+        <ul>
+          <li><strong>How Do Distance Learners Connect?</strong> — CHI 2019, Best Paper Honorable Mention (top 4%).</li>
+          <li><strong>Where is Community Among Online Learners? Identity, Efficacy and Personal Ties</strong> — CHI 2018.</li>
+          <li><strong>Sun, N. (2019).</strong> <em>Promoting Student Community with Increased Information Visibility in Distance Education.</em> Doctoral dissertation, Information Sciences and Technology, Pennsylvania State University.</li>
+        </ul>
+      </div>
+
+      <footer class="page-footer">
+        © 2026 Na Sun. Figures and findings from my own published doctoral research.
+      </footer>
+    </div>
+  </main>
+
+</div>
+</body>
+</html>
