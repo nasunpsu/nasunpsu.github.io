@@ -289,14 +289,32 @@ h3 { font-size: 1.05rem; margin-bottom: 4px; }
 .pillar-card .project-thumb {
   height: auto;
   min-height: 96px;
-  padding: 20px 18px;
+  padding: 0;
   text-transform: none;
   letter-spacing: 0;
+  text-align: left;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 0;
+}
+.pillar-card .project-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #faf9f7;
+  border-bottom: 1px solid #dbe5e0;
+}
+.pillar-card .project-thumb .q {
+  display: block;
+  padding: 16px 18px 18px;
   font-size: 1.02rem;
   line-height: 1.4;
-  text-align: left;
   font-weight: 600;
-  align-items: flex-start;
+  color: var(--accent);
+}
+.pillar-card .project-thumb img.photo {
+  aspect-ratio: 400 / 132;
+  object-fit: cover;
 }
 
 .type-label {

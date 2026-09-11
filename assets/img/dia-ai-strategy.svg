@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 396" role="img" aria-label="Research strategy map for frontier generative AI and multimodal creative tools: two audiences, three problem areas, and the methods used across them.">
+  <defs>
+    <style>
+      .hd{font:600 10px "Helvetica Neue",Arial,sans-serif;fill:#6b6b6b;letter-spacing:.12em}
+      .ti{font:600 13px "Helvetica Neue",Arial,sans-serif;fill:#1e1e1e}
+      .sb{font:400 11px "Helvetica Neue",Arial,sans-serif;fill:#6b6b6b}
+      .mt{font:500 11.5px "Helvetica Neue",Arial,sans-serif;fill:#1e1e1e}
+      .card{fill:#fff;stroke:#e6e3dd;stroke-width:1}
+      .lead{fill:#e8efec;stroke:#2c5f4f;stroke-width:1.2}
+      .link{stroke:#cfdbd5;stroke-width:1.2;fill:none}
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="880" height="396" fill="#faf9f7"/>
+
+  <text class="hd" x="40" y="34">WHO</text>
+  <text class="hd" x="318" y="34">WHAT I STUDIED</text>
+  <text class="hd" x="648" y="34">HOW</text>
+
+  <line x1="288" y1="20" x2="288" y2="376" stroke="#e6e3dd"/>
+  <line x1="618" y1="20" x2="618" y2="376" stroke="#e6e3dd"/>
+
+  <!-- WHO -->
+  <rect class="lead" x="40" y="96" width="210" height="62" rx="7"/>
+  <text class="ti" x="58" y="123">Enterprise professionals</text>
+  <text class="sb" x="58" y="141">deadline work, brand constraints</text>
+
+  <rect class="lead" x="40" y="196" width="210" height="62" rx="7"/>
+  <text class="ti" x="58" y="223">Beginner creators</text>
+  <text class="sb" x="58" y="241">no design training, high ambition</text>
+
+  <!-- links WHO -> WHAT -->
+  <path class="link" d="M250 127 C272 127 272 96 296 96"/>
+  <path class="link" d="M250 127 C272 127 272 186 296 186"/>
+  <path class="link" d="M250 227 C272 227 272 186 296 186"/>
+  <path class="link" d="M250 227 C272 227 272 276 296 276"/>
+
+  <!-- WHAT -->
+  <rect class="card" x="296" y="68" width="282" height="56" rx="7"/>
+  <text class="ti" x="314" y="92">Image creation &amp; creative tools</text>
+  <text class="sb" x="314" y="110">where control matters more than generation</text>
+
+  <rect class="card" x="296" y="158" width="282" height="56" rx="7"/>
+  <text class="ti" x="314" y="182">Multimodal &amp; on-canvas editing</text>
+  <text class="sb" x="314" y="200">direct manipulation vs. natural language</text>
+
+  <rect class="card" x="296" y="248" width="282" height="56" rx="7"/>
+  <text class="ti" x="314" y="272">AI onboarding &amp; low-literacy support</text>
+  <text class="sb" x="314" y="290">what stops a first result from being usable</text>
+
+  <!-- links WHAT -> HOW -->
+  <path class="link" d="M578 96 C600 96 600 150 626 150"/>
+  <path class="link" d="M578 186 C600 186 600 150 626 150"/>
+  <path class="link" d="M578 186 C600 186 600 226 626 226"/>
+  <path class="link" d="M578 276 C600 276 600 226 626 226"/>
+
+  <!-- HOW -->
+  <text class="mt" x="648" y="80">Foundational interviews</text>
+  <text class="mt" x="648" y="104">Critical user journey mapping</text>
+  <text class="mt" x="648" y="128">Concept &amp; on-canvas evaluation</text>
+  <text class="mt" x="648" y="152">Evaluation rubric design</text>
+  <text class="mt" x="648" y="176">Public forum &amp; log analysis</text>
+  <text class="mt" x="648" y="200">Sentiment benchmarking</text>
+  <text class="mt" x="648" y="224">Competitive teardown</text>
+  <text class="mt" x="648" y="248">Agentic analysis workflows</text>
+
+  <line x1="640" y1="66" x2="640" y2="256" stroke="#2c5f4f" stroke-width="2"/>
+
+  <rect x="40" y="316" width="800" height="48" rx="7" fill="#e8efec"/>
+  <text class="ti" x="58" y="338">The through-line</text>
+  <text class="sb" x="58" y="355">Every study came back to the same variable: whether people could aim the model, not whether the model was good.</text>
+</svg>
