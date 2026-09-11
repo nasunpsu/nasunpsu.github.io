@@ -144,7 +144,7 @@ h3 { font-size: 1.05rem; margin-bottom: 4px; }
 /* ---------- Project grid (home) ---------- */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   gap: 24px;
   margin-top: 24px;
 }
@@ -319,6 +319,11 @@ figure.fig img {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--bg-card);
+}
+figure.fig.banner img {
+  max-height: 460px;
+  object-fit: cover;
+  object-position: center;
 }
 figure.fig figcaption {
   font-size: 0.84rem;
