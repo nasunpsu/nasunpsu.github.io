@@ -360,6 +360,14 @@ figure.fig.banner img {
   object-fit: cover;
   object-position: center;
 }
+figure.fig video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+}
 figure.fig figcaption {
   font-size: 0.84rem;
   color: var(--text-muted);
