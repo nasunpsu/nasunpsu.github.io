@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Developer &amp; Platform Experience — Na Sun</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <img class="portrait" src="assets/img/na-portrait.jpg" alt="Na Sun presenting at ACM DIS 2025.">
+    <div class="name">Na Sun</div>
+    <div class="role">Senior UX Researcher, PhD</div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="section-label">Work</div>
+      <ul>
+        <li><a href="case-study-1.html">Frontier AI &amp; Creative Tools</a></li>
+        <li><a href="case-study-2.html">Enterprise Identity &amp; Access</a></li>
+        <li><a href="case-study-3.html" class="active">Developer &amp; Platform Experience</a></li>
+        <li><a href="case-study-4.html">Designing &amp; Measuring Community</a></li>
+      </ul>
+
+      <div class="section-label">More</div>
+      <ul>
+        <li><a href="publications.html">Publications &amp; Talks</a></li>
+        <li><a href="resume.html">Résumé</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a class="resume-btn" href="resume.html">View Résumé →</a>
+
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/nasunpsu/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=ysBq_UcAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
+      <a href="mailto:nasun308@gmail.com">Email</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="content">
+
+      <h1>What makes a developer bet their roadmap on someone else's platform?</h1>
+      <p class="subtitle">Mixed-methods research across a three-sided ecosystem — end users, IT admins, and third-party developers — plus the measurement program that tracked whether any of it was working.</p>
+
+      <div class="case-meta">
+        <div><strong>Role</strong><span>Senior UX Researcher, program lead</span></div>
+        <div><strong>Methods</strong><span>Developer survey (n=146), interviews (n=19), observational usability, longitudinal satisfaction benchmarking, MaxDiff, significance testing</span></div>
+        <div><strong>Domain</strong><span>Developer platforms, APIs, app marketplaces, data infrastructure</span></div>
+        <div><strong>Period</strong><span>2019 – 2022</span></div>
+        <div><strong>Scale</strong><span>20+ PMs · 560% growth in API measurement coverage</span></div>
+      </div>
+
+      <h2>Three audiences, three sets of incentives</h2>
+      <p>A platform is not one product with one user. End users install apps and want them to
+      work. IT admins decide what's allowed to run inside the organization and carry the risk
+      when it goes wrong. Third-party developers decide whether the platform is worth building
+      on at all, and they have somewhere else to go. Product bets that delight one of these
+      groups routinely break trust with another, so the research had to hold all three at once
+      instead of optimizing for whoever was loudest in the roadmap meeting.</p>
+
+      <figure class="fig narrow">
+        <img src="assets/img/dia-ecosystem.svg" alt="A triangle of end users who want apps to work, IT admins who carry the risk, and third-party developers who can build elsewhere, with governance, reach and what is allowed to run as the tensions between them.">
+        <figcaption>Three audiences, three incentives. Research that optimizes for one of these corners reliably breaks trust at another.</figcaption>
+      </figure>
+
+      <h2>Why developers build where they build</h2>
+      <p>I ran this in two passes: a survey of 146 developers across competing chat platforms
+      to establish the shape of the decision, then 19 in-depth interviews to understand the
+      reasoning underneath it.</p>
+
+      <p>The finding that changed strategy was that "developer" is not one audience either.
+      Developers building public, commercially distributed apps chose platforms on market
+      value and reach — how many customers they could get to, and whether a partnership
+      unlocked revenue. Developers building private, internal apps barely cared about reach;
+      they chose on documentation quality and platform reliability, because their cost is
+      engineering time and their risk is silent breakage.</p>
+
+      <div class="impact-banner">
+        <strong>The implication:</strong> one developer strategy cannot serve both. Growing
+        the public app catalog is a distribution and business-development problem. Growing
+        internal adoption is a documentation and reliability problem. Teams had been treating
+        them as one funnel and under-serving both.
+      </div>
+
+      <p>Dissatisfaction clustered in three places, and none of them were the API surface
+      itself: gaps against competing platforms' feature parity, documentation that was hard to
+      act on — especially around authentication and configuration — and constrained UI
+      components that limited what an app could look like once built.</p>
+
+      <h2>What end users and admins hit</h2>
+      <p>Observational research on the install journey found people leaving the product
+      entirely and using web search to find the app directory, because the entry points inside
+      the product weren't discoverable. Once someone found any entry point, they reused it
+      forever, which made the journey feel easy in retrospect and hid the problem from
+      everyone measuring downstream.</p>
+
+      <p>People also searched rather than browsed, and searched by the problem they were
+      trying to solve rather than by app name — which the catalog wasn't built to answer. For
+      admins, search quality was the top pain as well, followed by concerns about app quality
+      and cost exposure. Three different audiences, converging on the same broken step.</p>
+
+      <h2>Building the measurement layer</h2>
+      <p>Insight without measurement doesn't survive a reorg. Alongside the foundational work
+      I built and scaled the platform's developer satisfaction benchmarking — a standardized
+      instrument applied consistently across APIs so scores were comparable across products
+      and over time, growing coverage from a handful of APIs to the platform's full surface
+      area, a <strong>560% increase</strong>, and establishing shared goals between the
+      technical writing and developer relations organizations that had previously had no
+      common measure to argue from.</p>
+
+      <p>The same discipline applied on the infrastructure side, where I ran multi-year
+      satisfaction tracking on internal developer tooling with longitudinal significance
+      testing, so the team could distinguish real movement from noise rather than reading
+      quarterly wobble as progress. On one high-scale storage service, two rounds of iterative
+      usability research moved task success on the critical journeys by
+      <strong>37 percentage points</strong> and lifted user sentiment
+      <strong>8 points</strong>, which is what cleared the bar for general availability.</p>
+
+      <div class="impact-grid">
+        <div class="impact-item">
+          <span class="num">560%</span>
+          <span class="txt">growth in API measurement coverage, from a handful of APIs to the platform's full surface area</span>
+        </div>
+        <div class="impact-item">
+          <span class="num">+37 pts</span>
+          <span class="txt">task success on the critical journeys of a high-scale storage service, across two usability rounds</span>
+        </div>
+        <div class="impact-item">
+          <span class="num">+8 pts</span>
+          <span class="txt">user sentiment on the same service — what cleared the bar for general availability</span>
+        </div>
+        <div class="impact-item">
+          <span class="num">20+</span>
+          <span class="txt">PMs whose multi-quarter roadmaps the research program fed</span>
+        </div>
+      </div>
+
+      <h2>Reflection</h2>
+      <p>Platform research is rarely about a screen. It's about whether a set of incentives
+      line up well enough that three groups of people, who never meet, keep choosing to
+      participate. The frameworks I built mattered less as research artifacts than as shared
+      language — a way for PMs, engineers, and external partners to argue about the same thing
+      instead of past each other.</p>
+
+      <div class="related-work">
+        <h2>Other work in this area</h2>
+        <ul>
+          <li><strong>Workflow automation research</strong> — how people build and share automations, and why the builder is so often not the person who benefits.</li>
+          <li><strong>App marketplace research across all three audiences</strong> — discovery, installation, quality signals, and promotion, studied from the end user, admin, and developer sides.</li>
+          <li><strong>Enterprise integration prioritization survey</strong> — which third-party integrations carried the most demand, used to shape annual planning.</li>
+          <li><strong>Data infrastructure and developer tooling research</strong> — critical user journeys for indexing pipelines, query tooling, and data discovery, including feature prioritization by MaxDiff.</li>
+          <li><strong>User segmentation for a query language</strong> — six distinct segments with different goals, dependencies, and support needs.</li>
+        </ul>
+      </div>
+
+      <footer class="page-footer">
+        © 2026 Na Sun.
+      </footer>
+    </div>
+  </main>
+
+</div>
+</body>
+</html>

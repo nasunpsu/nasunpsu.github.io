@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 132" role="img" aria-label="A spectrum between too few privileged admins, which creates a bottleneck, and too many, which creates risk. Organizations drift toward over-provisioning because it is the direction that blocks nobody.">
+  <defs>
+    <linearGradient id="p-g" x1="0" x2="1">
+      <stop offset="0" stop-color="#cfdbd5"/>
+      <stop offset="1" stop-color="#2c5f4f"/>
+    </linearGradient>
+    <marker id="p-ar" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0 L8 4 L0 8 z" fill="#2c5f4f"/>
+    </marker>
+    <style>
+      .e{font:500 10px "Helvetica Neue",Arial,sans-serif;fill:#1e1e1e}
+      .s{font:400 9px "Helvetica Neue",Arial,sans-serif;fill:#6b6b6b}
+      .k{font:600 9px "Helvetica Neue",Arial,sans-serif;fill:#2c5f4f;letter-spacing:.06em}
+    </style>
+  </defs>
+
+  <text class="e" x="14" y="30">Too few admins</text>
+  <text class="s" x="14" y="44">work waits</text>
+
+  <text class="e" x="386" y="30" text-anchor="end">Too many admins</text>
+  <text class="s" x="386" y="44" text-anchor="end">access nobody tracks</text>
+
+  <rect x="14" y="60" width="372" height="7" rx="3.5" fill="url(#p-g)"/>
+
+  <path d="M120 96 H286" stroke="#2c5f4f" stroke-width="1.3" fill="none" marker-end="url(#p-ar)"/>
+  <circle cx="120" cy="63.5" r="6" fill="#fff" stroke="#6b6b6b" stroke-width="1.4"/>
+  <circle cx="292" cy="63.5" r="6" fill="#2c5f4f"/>
+  <path d="M120 72 V90" stroke="#cfdbd5" stroke-width="1" stroke-dasharray="2 2"/>
+  <path d="M292 72 V90" stroke="#cfdbd5" stroke-width="1" stroke-dasharray="2 2"/>
+
+  <text class="k" x="200" y="90" text-anchor="middle">WHERE ORGANIZATIONS LAND</text>
+  <text class="s" x="200" y="118" text-anchor="middle">the only direction that blocks nobody</text>
+</svg>

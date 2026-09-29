@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 124" role="img" aria-label="The four journeys admins move through: assigning a role, creating one, changing one, and auditing what exists. Creating a role took the most time; assigning one was the most error-prone.">
+  <defs>
+    <style>
+      .e{font:500 10px "Helvetica Neue",Arial,sans-serif;fill:#1e1e1e}
+      .s{font:400 9px "Helvetica Neue",Arial,sans-serif;fill:#6b6b6b}
+      .k{font:600 9px "Helvetica Neue",Arial,sans-serif;fill:#2c5f4f;letter-spacing:.06em}
+      .m{font:600 9px "Helvetica Neue",Arial,sans-serif;fill:#2c5f4f}
+    </style>
+  </defs>
+
+  <text class="k" x="14" y="16">FOUR JOURNEYS ADMINS MOVE THROUGH</text>
+
+  <rect x="14"  y="30" width="84" height="30" rx="5" fill="#e8efec" stroke="#2c5f4f" stroke-width="1.2"/>
+  <rect x="110" y="30" width="84" height="30" rx="5" fill="#e8efec" stroke="#2c5f4f" stroke-width="1.2"/>
+  <rect x="206" y="30" width="84" height="30" rx="5" fill="#ffffff" stroke="#e6e3dd" stroke-width="1.2"/>
+  <rect x="302" y="30" width="84" height="30" rx="5" fill="#ffffff" stroke="#e6e3dd" stroke-width="1.2"/>
+
+  <text class="e" x="56"  y="49" text-anchor="middle">Assign a role</text>
+  <text class="e" x="152" y="49" text-anchor="middle">Create a role</text>
+  <text class="e" x="248" y="49" text-anchor="middle">Change a role</text>
+  <text class="e" x="344" y="49" text-anchor="middle">Audit access</text>
+
+  <path d="M56 62 V70"  stroke="#2c5f4f" stroke-width="1" stroke-dasharray="2 2"/>
+  <path d="M152 62 V70" stroke="#2c5f4f" stroke-width="1" stroke-dasharray="2 2"/>
+
+  <text class="m" x="56"  y="82" text-anchor="middle">most error-prone</text>
+  <text class="m" x="152" y="82" text-anchor="middle">most time</text>
+
+  <path d="M14 98 H386" stroke="#e6e3dd" stroke-width="1"/>
+  <text class="s" x="200" y="114" text-anchor="middle">One is slow and visible. The other is fast and silent.</text>
+</svg>
