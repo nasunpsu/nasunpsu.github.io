@@ -353,6 +353,7 @@ h3 { font-size: 1.05rem; margin-bottom: 4px; }
   text-decoration: none;
 }
 .btn-row { margin: -12px 0 34px; }
+.callout + .btn-row { margin-top: 20px; }
 
 /* ---------- Figures ---------- */
 figure.fig {
